@@ -10,12 +10,16 @@ provider:
 
 functions:
   hello:
-    handler: handler.hello
+    handler: handlers/graphql/index.graphqlHandler
     events:
       - http:
           path: /
-          method: GET
+          method: get
+          cors: true
+      - http:
+          path: /
+          method: post
+          cors: true          
 
 plugins:
-  - serverless-offline          
-  - apollo-server-lambda-graphql
+  - serverless-offline

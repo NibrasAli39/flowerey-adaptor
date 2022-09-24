@@ -2,7 +2,7 @@ org: nibras39
 app: flowerey-adaptor
 service: flowerey-adaptor
 
-frameworkVersion: '3'
+frameworkVersion: "3"
 
 provider:
   name: aws
@@ -11,3 +11,11 @@ provider:
 functions:
   hello:
     handler: handler.hello
+    events:
+      - http:
+          path: /
+          method: GET
+
+plugins:
+  - serverless-offline          
+  - apollo-server-lambda-graphql

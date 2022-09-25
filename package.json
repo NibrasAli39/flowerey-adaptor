@@ -17,7 +17,8 @@
     "url": "https://github.com/NibrasAli39/flowerey-adaptor/issues"
   },
   "homepage": "https://github.com/NibrasAli39/flowerey-adaptor#readme",
-  "devDependencies": {
+  "dependencies": {
+    "apollo-server-core": "^3.10.2",
     "apollo-server-lambda": "^3.10.2",
     "graphql": "^16.6.0",
     "serverless-offline": "^10.2.1"

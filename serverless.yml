@@ -10,7 +10,7 @@ provider:
 
 functions:
   hello:
-    handler: handlers/graphql/index.graphqlHandler
+    handler: index.graphqlHandler
     events:
       - http:
           path: /

@@ -4,7 +4,7 @@
   "description": "Serverless microservice for flowerey powered by Aws lambda and Graphql",
   "main": "serverless.yml",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "serverless offline start"
   },
   "repository": {
@@ -22,5 +22,8 @@
     "apollo-server-lambda": "^3.10.2",
     "graphql": "^16.6.0",
     "serverless-offline": "^10.2.1"
+  },
+  "devDependencies": {
+    "jest": "^29.0.3"
   }
 }

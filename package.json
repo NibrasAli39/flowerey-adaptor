@@ -5,7 +5,8 @@
   "main": "serverless.yml",
   "scripts": {
     "test": "jest",
-    "start": "serverless offline start"
+    "start": "serverless offline start",
+    "deploy": "serverless deploy --aws-profile flowerey"
   },
   "repository": {
     "type": "git",

@@ -7,6 +7,12 @@ frameworkVersion: "3"
 provider:
   name: aws
   runtime: nodejs14.x
+  profile: flowerey
+  iam:
+    deploymentRole: arn:aws:iam::473372733375:user/flowerey-admin
+
+
+
 
 functions:
   hello:
